@@ -1,11 +1,16 @@
 package object;
 
+import main.GamePanel;
+
 import javax.imageio.ImageIO;
 import java.io.IOException;
 
 public class ChestObject extends SuperObject{
 
-    public ChestObject(){
+    GamePanel gp;
+    public ChestObject(GamePanel gp){
+
+        this.gp = gp;
 
         name = "Chest";
 
